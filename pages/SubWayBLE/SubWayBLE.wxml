@@ -1,0 +1,36 @@
+<view class="connect_box">
+    <text class='connect_device_name'>{{deviceName}}</text>
+    <text wx:if="{{connect}}" class="connect_state" catchtap="DisConnectTap">已连接</text>
+    <text wx:else class="connect_state">未连接</text>
+</view>
+<view >
+  <view class="detail_box">
+   <image src='../../images/airFan.png' class="fan"></image>
+   <view class='name'>风扇</view>
+   <switch bindchange="switch1Change" class='key' />
+  </view>
+    <view class="detail_box">
+    <image src='../../images/waterPump.png' class="water"></image>
+    <view class='name'>水泵</view>
+    <switch  bindchange="switch1Change1" class='key' />
+  </view>
+  <view class="detail_box">
+    <image src='../../images/temperature.png' class="wendu"></image>
+    <view class='name'>温度阀值</view>
+    <view class='num'>
+      <text style='border-radius: 3px 0 0 3px;' id='wendu' bindtap='lessen'>-</text>
+      <input type='number' value='{{wendu}}' name='piece' id='wendu' bindblur="changeVal" />
+      <text style='border-radius: 0 3px 3px 0;' id='wendu' bindtap='add'>+</text>
+    </view>
+  </view>
+  <view class="detail_box">
+    <image src='../../images/smog.png' class="water"></image>
+    <view class='name'>烟雾阀值</view>
+    <view class='num'>
+      <text style='border-radius: 3px 0 0 3px;' id='yanwu' bindtap='lessen'>-</text>
+      <input type='number' value='{{yanwu}}' name='piece' id='yanwu' bindblur="changeVal" />
+      <text style='border-radius: 0 3px 3px 0;' id='yanwu' bindtap='add'>+</text>
+    </view>
+  </view>
+ 
+</view>

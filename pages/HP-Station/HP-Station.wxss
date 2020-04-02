@@ -1,0 +1,82 @@
+/* pages/addFunction/addFunction.wxss */
+@import "../../style/guide.wxss";
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+/**index.wxss**/
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.btinfo {
+  height: 100px;
+}
+
+.contentview {
+  margin: 0 10px;
+}
+
+.button {
+  margin: 5px;
+}
+
+.myview {
+  height: 200px;
+  word-break:break-all;/* 自动换行 */
+}
+
+.connect_state {
+    float: right;
+    padding-right: 20px;
+    padding-top: 10px;
+    text-decoration: underline;
+    color: #39beff;
+}
+
+.detail_box{
+    margin-top: 40rpx;
+    height: 60rpx;
+    width: 100%;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: none;
+    border-right: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 300ms ease;
+  
+  
+  
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.picker{
+    padding: 0px;   
+    background-color: #FFFFFF;
+}
+
+.name{
+    display: inline-block;
+    width: 50%;
+    margin-left: 1.5rem;
+    font-size: 0.9rem;
+}
+.key{
+    float: right;
+    margin-right: 2rem;
+    margin-top: 0.2rem;
+}
+.fan{
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+  margin-left: 2.25rem;
+  margin-right: 0.25rem;
+}

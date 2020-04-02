@@ -1,0 +1,62 @@
+<!--"pages/HP-Station/HP-Station.wxml"-->
+
+<view>
+    <button type="primary" class="button" 
+            plain = "true" size = "mini" bindtap="InitBLE">搜 寻 蓝 牙 设 备
+    </button>
+
+    <text wx:if="{{ConnectState}}" class="connect_state"> 已 连 接 </text>
+    <text wx:else class="connect_state"> 未 连 接 </text>
+</view>
+
+<!--同步时间-->
+<view>
+    <view class="detail_box">
+          <image src='../../images/user-unlogin.png' class="fan">    
+            </image>      
+
+        <view class='name'>同步当前时间</view>
+
+        <switch checked="{{switch1State}}" bindchange="switch1Change" class='key' />
+    </view>
+</view>
+
+<!--显示字符，按下设备开关切换模式-->
+<view>
+    <view class="detail_box">
+          <image src='../../images/user-unlogin.png' class="fan">    </image>      
+
+        <view class='name'>输入显示的字符(16个字符)</view>
+
+        <switch checked="{{switch2State}}" bindchange="switch2Change" class='key' />
+    </view>
+</view>
+
+<!--设置定时开关机时间-->
+<view>
+    <view class="detail_box">
+          <image src='../../images/user-unlogin.png' class="fan">    </image>      
+
+       <!-- <view class='name'>定时开关机</view>-->
+        
+        <picker mode="time" value="{{times}}" class="name"
+                start="00:00" end="23:59" bindchange="bindTimeChange">
+            <view class="picker">设定定时开关机时间: {{times}}
+            </view>
+        </picker>
+
+        <switch checked="{{switch3State}}" bindchange="switch3Change" class='key' />
+        
+    </view>
+</view>
+
+<view class="container">
+  
+
+  
+    <view class='myview'>
+        {{info}}
+    </view>
+
+
+</view>

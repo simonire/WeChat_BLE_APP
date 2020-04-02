@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="container">
+
+  <!-- 选择器件 -->
+  <view class="userinfo">
+    <view class="userinfo-nickname-wrapper">
+      <text>选择你需要的器件：</text>
+    </view>
+  </view>
+
+  <!-- HPDL1414 桌面显示器 -->
+  <view class="uploader"> 
+    <navigator url="../HP-Station/HP-Station" open-type="navigate" class="uploader-text"> 
+      <text>HPDL1414 桌面显示器</text>
+    </navigator>
+  </view>
+
+  <!-- HPDL1414 便携手表 -->
+  <view class="uploader">
+    <navigator url="../im/im" open-type="navigate" class="uploader-text"> 
+      <text>HPDL1414 便携手表</text>
+    </navigator> 
+  </view>
+
+  <!-- 南京轨道交通 显示卡片 -->
+  <view class="uploader">
+    <navigator url="../SubWayBLE/SubWayBLE" open-type="navigate" class="uploader-text"> 
+      <text>南京轨道交通 显示卡片</text>
+    </navigator>  
+  </view>
+
+</view>

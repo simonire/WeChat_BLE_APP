@@ -1,0 +1,85 @@
+/* pages/SubWayBLE/SubWayBLE.wxss */
+.connect_box {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 32rpx;
+    color: #666;
+    font-family: "Microsoft YaHei";
+}
+.connect_device_name{
+    float: left;
+    padding-left: 10px;
+    color: #39beff;
+}
+
+.connect_state {
+    float: right;
+    padding-right: 10px;
+    text-decoration: underline;
+    color: #39beff;
+}
+
+.fan{
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+  margin-left: 2.25rem;
+  margin-right: 0.25rem;
+}
+.water{
+  width: 2.5rem;
+  height: 2rem;
+  vertical-align: middle;
+  margin-left: 2rem;
+}
+.name{
+  display: inline-block;
+  width: 22%;
+  margin-left: 1.5rem;
+  font-size: 0.9rem;
+}
+.key{
+  float: right;
+  margin-right: 2rem;
+  margin-top: 0.2rem;
+}
+.detail_box{
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.num {
+  display: inline-block;
+  width: 45%;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.num input {
+  display: inline-block;
+  width: 2rem;
+  text-align: center;
+  border: 1px solid #f2f2f2;
+  border-left: none;
+  border-right: none;
+  color: #a2a2a2;
+}
+
+.num text {
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  text-align: center;
+  border: 1px solid #f2f2f2;
+  vertical-align: top;
+  color: #dcdcdc;
+}
+.wendu{
+  width:1.9rem;
+  height:2rem;
+  vertical-align:middle;
+  margin-left:2.3rem;
+  margin-right:.3rem;
+}
